@@ -13,12 +13,12 @@ num = random.randrange(10)
 print(num)
 
 # 5 ~ 9
-num = random.randrange(5,10)
+num = random.randrange(5, 10)
 print(num)
 
-print("="*50)
+print("=" * 50)
 
 num = ""
 for i in range(6):
-  num += str(random.randrange(36))+", "
-  print(num)
+    num += str(random.randrange(36)) + ", "
+    print(num)
