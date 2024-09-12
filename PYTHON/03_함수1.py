@@ -115,3 +115,28 @@ def varTest2(test_var=test_var):
     test_var = "변경"
 varTest2()
 print("test_var2 :",test_var)
+
+def add(a, b):
+    return a + b
+
+print(add(1,2))
+
+# 익명의 함수를 변수에 저장 하여 사용 할 수 있다.
+# lambda 매개변수, .. : 반환값
+add1 = lambda a, b : a + b
+print(add1(1,2))
+
+# 리스트의 컴프리핸션
+# 반복이 가능한 객체를 대상으로 새로운 객체를 만들어 내는 것
+
+a = [1, 2, 3, 4, 5]
+res = []
+# 기존 리스트의 요소 값에 3을 곱한 새로운 리스트를 만들고 싶다.
+for i in a:
+    res.append(i*3)
+print(a)
+print(res)
+# [반환값 for 변수명 in 반복할대상 if 조건]
+res = []
+res = [i*3 for i in a if i % 2 == 0]
+print(res)
